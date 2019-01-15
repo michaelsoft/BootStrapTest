@@ -16,16 +16,16 @@
       <div class="col-md-2" style="text-align:center; margin-top:10px;">
         <h2>Bug Free</h2>
       </div>
-      <div class="col-md-7" >
+      <div class="col-md-7">
         <ul class="nav nav-tabs" style="margin-top:10px;">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Project</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Bug</a>
+            <a class="nav-link active" href="#">Bug</a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#">Admin</a>
@@ -34,23 +34,127 @@
       </div>
       <div class="col-md-3" style="padding: 5px; width:150px;">
         <div style="float:right">
-        <a href="#">Welcome, Michael!</a>
-        <a href="#">Logout</a>
-      </div>
+          <a href="#">Welcome, Michael!</a>
+          <a href="#">Logout</a>
+        </div>
       </div>
     </div>
-    <div class="row" >
-      <nav aria-label="breadcrumb">
+    <div class="row">
+      <nav aria-label="breadcrumb" style="background-color:unset;">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
           <li class="breadcrumb-item"><a href="#">Bug</a></li>
           <li class="breadcrumb-item active" aria-current="page">Bug List</li>
         </ol>
       </nav>
     </div>
-    <div class="row" style="height:500px;">
-      <div class="col-md-3" style="background-color:darksalmon">Sidebar</div>
-      <div class="col-md-9" style="background-color:deepskyblue">Content</div>
+    <div class="row" style="height:750px;">
+      <div class="col-md-3">
+        <ul class="list-group">
+          <li class="list-group-item active">Assigned to me</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Morbi leo risus</li>
+          <li class="list-group-item">Porta ac consectetur ac</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+      </div>
+      <div class="col-md-9">
+        <div id="BugList" class="row card">
+          <div class="col card-body">
+            <nav class="navbar navbar-light bg-light float-right">
+              <form class="form-inline ">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </nav>
+            <table class="table table-hover" style="margin:10px;">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-end">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div id="BugDetail" class="row card" style="margin:10px;">
+          <div class="col card-body">
+            <div class="row">
+              <div class="col btn-group float-right" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">New</button>
+                <button type="button" class="btn btn-secondary">Save</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <form id="BugForm">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div>
+                  <ul id="BugTabs" class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                  </ul>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="row" style="background-color:darkgoldenrod;height:50px;">
       Footer
